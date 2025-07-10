@@ -5,13 +5,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { Home, Wallet, ArrowLeftRight, Settings } from 'lucide-react';
+import { Home, Wallet, ArrowLeftRight, Settings, Target } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { href: '/', icon: Home, label: 'Overview' },
-  { href: '/wallets', icon: Wallet, label: 'Wallets' },
-  { href: '/transactions', icon: ArrowLeftRight, label: 'Transactions' },
+  { href: '/', icon: Home, label: 'Visão Geral' },
+  { href: '/wallets', icon: Wallet, label: 'Carteiras' },
+  { href: '/transactions', icon: ArrowLeftRight, label: 'Transações' },
+  { href: '/budgets', icon: Target, label: 'Orçamentos' },
 ];
 
 export default function Sidebar() {
@@ -54,10 +55,10 @@ export default function Sidebar() {
                 className="flex h-9 w-9 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-foreground md:h-8 md:w-8"
               >
                 <Settings className="h-5 w-5" />
-                <span className="sr-only">Settings</span>
+                <span className="sr-only">Configurações</span>
               </Link>
             </TooltipTrigger>
-            <TooltipContent side="right">Settings</TooltipContent>
+            <TooltipContent side="right">Configurações</TooltipContent>
           </Tooltip>
         </nav>
       </TooltipProvider>

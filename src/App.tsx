@@ -8,6 +8,7 @@ import SignupPage from '@/pages/auth/SignupPage';
 import OverviewPage from '@/pages/dashboard/OverviewPage';
 import WalletsPage from '@/pages/dashboard/WalletsPage';
 import TransactionsPage from '@/pages/dashboard/TransactionsPage';
+import BudgetsPage from '@/pages/dashboard/BudgetsPage';
 import NotFoundPage from '@/pages/NotFoundPage';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Route path="/" element={<OverviewPage />} />
               <Route path="/wallets" element={<WalletsPage />} />
               <Route path="/transactions" element={<TransactionsPage />} />
+              <Route path="/budgets" element={<BudgetsPage />} />
             </Route>
           </Route>
 
